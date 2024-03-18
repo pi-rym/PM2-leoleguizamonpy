@@ -1,0 +1,145 @@
+:root {
+    --magentaLight: #d42252;
+    --cianLight: #07bae8;
+    --greenFluorecent: #3aff83;
+    --yellow: #ffea3a;
+    --blueDark: #151726;
+    --blueGray: #595e7a;
+    --blueWhite: #ccceda;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--blueDark);
+}
+
+/* menu */
+.menuPadre {
+    background-color: var(--blueDark);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.menuHijo {
+    width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+header {
+    color: var(--blueWhite);
+}
+
+.logo {
+    width: 35px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    place-items: center;
+}
+
+nav a {
+    color: var(--blueGray);
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+nav a:hover {
+    color: var(--magentaLight);
+}
+
+nav a:active {
+    color: #FFAB00;
+    border-bottom: 3px solid #FFAB00;
+}
+
+/* header */
+
+#slidesPortada {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#slidesPortada img {
+    width: 100%;
+    height: 75%5;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#slidesPortada::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgb(21, 23, 38) 15%, rgb(21, 23, 38) 25%, rgba(226, 12, 76, 0) 85%);
+    z-index: 0;
+}
+
+/* footer */
+.foother-father {
+    background-color: var(--magentaLight);
+    width: 100%;
+}
+
+.foother-father .foother-child {
+    width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.foother-father header {
+    color: var(--blueDark);
+}
+
+.foother-father .logo {
+    width: 35px;
+    height: auto;
+}
+
+.foother-father nav {
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    place-items: center;
+}
+
+.foother-father nav a:hover {
+    color: var(--blueWhite);
+}
+
+.foother-father nav a:active {
+    color: #FFAB00;
+    border-bottom: 3px solid #FFAB00;
+}
+
+.foother-father nav a {
+    color: var(--blueDark);
+    text-decoration: none;
+    margin-left: 40px;
+}
