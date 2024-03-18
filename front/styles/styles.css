@@ -4,6 +4,7 @@
     --greenFluorecent: #3aff83;
     --yellow: #ffea3a;
     --blueDark: #151726;
+    --blueBlack: #0a0b13;
     --blueGray: #595e7a;
     --blueWhite: #ccceda;
 }
@@ -11,7 +12,15 @@
 /* Body */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--blueDark);
+    background-color: var(--blueWhite);
+}
+
+a {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--blueWhite);
+    text-decoration: none;
 }
 
 /* menu */
@@ -20,7 +29,8 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
+    z-index: 99999;
+    padding: 8px;
 }
 
 .menuHijo {
@@ -39,7 +49,7 @@ header {
 }
 
 .logo {
-    width: 35px;
+    width: 50%;
     height: auto;
 }
 
@@ -76,7 +86,7 @@ nav a:active {
 
 #slidesPortada img {
     width: 100%;
-    height: 75%5;
+    height: 75%;
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -91,8 +101,68 @@ nav a:active {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgb(21, 23, 38) 15%, rgb(21, 23, 38) 25%, rgba(226, 12, 76, 0) 85%);
+    background: linear-gradient(to top, rgb(204, 206, 218) 15%, rgb(204, 206, 218) 35%, rgba(226, 12, 76, 0) 85%);
     z-index: 0;
+}
+
+#films {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    z-index: 1000;
+    margin-top: -400px;
+    margin-bottom: 70px;
+    color: var(--blueWhite);
+}
+
+#films img {
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 0.5em;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#films h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+#films p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: var(--blueGray);
+}
+
+#films .movie {
+    background-color: var(--blueDark);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20em;
+    padding: 1rem;
+    margin-left: 1em;
+    position: relative;
+    z-index: 9999;
+}
+
+#films .movie:hover {
+    background-color: #fff;
+    color: var(--blueDark);
+    transition: 0.7s;
+}
+
+#films .movie .divMovie {
+    margin: 24px;
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
 }
 
 /* footer */
@@ -114,11 +184,6 @@ nav a:active {
 
 .foother-father header {
     color: var(--blueDark);
-}
-
-.foother-father .logo {
-    width: 35px;
-    height: auto;
 }
 
 .foother-father nav {
