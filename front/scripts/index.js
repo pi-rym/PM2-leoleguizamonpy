@@ -19,6 +19,8 @@ function renderFilms(movie) {
         movieElement.appendChild(containerMovie)
 }
 
+$.get('https://students-api.2.us-1.fl0.io/movies',(data)=> data.forEach(renderFilms))
+
 tempData.forEach(renderFilms)
 
 console.log(tempData);
