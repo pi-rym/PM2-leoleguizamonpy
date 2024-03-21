@@ -1,7 +1,22 @@
+const axios = require("axios")
+
 const renderFilms = require("./renderFilms")
 
-const getFilms = () => {
-    $.get('https://students-api.2.us-1.fl0.io/movies', (data) => data.forEach(renderFilms))
+//const getFilms = () => {
+//    axios.get('https://students-api.up.railway.app/movies')
+//    .then(({data})=> data.forEach(renderFilms))
+//   .catch((error)=> console.log(error.message))
+//}
+
+const getFilms = async ()=> {
+    try {
+        const {data} = await axios.get('https://students-api.up.railway.app/movies')
+        console.log(data);
+        data.forEach(renderFilms)
+    } catch (error) {
+        console.log(error)
+    }
+
 }
 
 module.exports = getFilms
