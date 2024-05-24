@@ -1,0 +1,106 @@
+@import url(import.css);
+
+.portadaFather {
+    background-color: var(--YellowLight);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.portadaChild {
+    width: 900px;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    padding: 1rem;
+    justify-content: left;
+    align-items: center;
+}
+
+.portadaChildImage {
+    margin-right: 24px;
+}
+
+.portadaChildImage img {
+    width: 480px;
+}
+
+.portadaChildDescription {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.portadaChildDescription h1,
+.portadaChildDescription h2 {
+    margin: 0;
+}
+
+.portadaChildDescription p,
+.portadaChildDescription button {
+    margin-top: 0.6rem;
+}
+
+.tiraLogosFather {
+    background-color: var(--redLightWhite);
+    width: 100%;
+}
+
+.tiraLogosChild {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 900px;
+    height: 100px;
+}
+
+#theWalkingDead {
+    width: 120px;
+    cursor: pointer;
+}
+
+#fear {
+    width: 75px;
+    cursor: pointer;
+}
+
+#worldBeyond {
+    width: 70px;
+    cursor: pointer;
+}
+
+#deadCity {
+    width: 50px;
+    cursor: pointer;
+}
+
+#dixon {
+    width: 60px;
+    cursor: pointer;
+}
+
+#theOneLives {
+    width: 110px;
+    cursor: pointer;
+}
+
+.ultimasEntradas {
+    background-color: var(--blackMedium);
+    width: 100%;
+    height: 50vh;
+    padding-top: 4rem;
+}
+
+#ultimasEntradasTitulo {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    color: var(--YellowLight);
+    font-size: 1.4rem;
+    font-weight: 200;
+    font-style: light;
+}
