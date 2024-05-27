@@ -4,65 +4,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles/">
+  <link rel="stylesheet" href="styles/import.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 
 <body>
   <header>
-    <!-- Menú Padre -->
     <div class="menuFather">
       <div class="menuChild">
-        <div class="logo">
-          <img src="assets/img/brand.svg" id="logo">
-        </div>
+        <a href="https://www.linkedin.com/in/leoleguizamonpy/"><img src="assets/img/brand.svg" id="logo"></a>
         <nav>
-          <a href="#" class="link" id="activate">HOME</a>
-          <a href="#" class="link">Cargar Datos</a>
-          <a href="#" class="link">Blog</a>
-          <a href="#" class="link">Acerca de</a>
+          <a href="index.html" class="link" id="activate">HOME</a>
+          <a href="pages/carga_de_datos.html" class="link">Cargar Datos</a>
+          <a href="pages/blog.html" class="link">Blog</a>
+          <a href="pages/acerca_de.html" class="link">Acerca de</a>
       </div>
     </div>
     </div>
   </header>
+
   <main>
-    <!--Portada Principal-->
-    <section class="portadaFather">
-      <div class="portadaChild">
-        <div class="portadaChildImage">
-          <img src="assets/img/TWD-Poster.jpg">
+    <section class="portadaPrincipal">
+      <div class="contenedor">
+        <div class="contenedor02">
+          <img id="portadaCambio" src="../front/assets/img/Posters/dixon.jpg" alt="">
         </div>
-        <div class="portadaChildDescription">
-          <h1>The Walking Dead</h1>
-          <h2><span class="material-symbols-rounded">grade</span> 4.2/5</h2>
+        <div class="contenedor01">
+          <h1>TWD Daryl Dixon</h1>
+          <h2><i class="fa-solid fa-star"></i>8.2 (13.548)</h2>
           <p>Un grupo de supervivientes de una extraña epidemia que convierte a los humanos en zombis recorre Estados
             Unidos. La expedición, liderada por el policía Rick Grimes, busca un lugar seguro para establecerse e
             investigar el origen del fenómeno.</p>
-          <button class="buttonPrimary">VER MÁS<span class="material-symbols-rounded">
-              expand_circle_right
-            </span></button>
+          <button role="button" class="buttonPrimary"><i class="fas fa-play"></i>Episodios</button>
+          <button role="button" class="buttonPrimary"><i class="fas fa-info-circle"></i>Información</button>
         </div>
       </div>
     </section>
+
     <!--Logos de las Series-->
     <section class="tiraLogosFather">
-      <div class="tiraLogosChild">
+      <div class="contenedor">
         <img id="theWalkingDead" src="assets/img/logos/theWalking.svg">
         <img id="fear" src="assets/img/logos/fear.svg">
         <img id="worldBeyond" src="assets/img/logos/worldBeyond.svg">
+        <img id="tales" src="assets/img/logos/tales.svg">
         <img id="deadCity" src="assets/img/logos/deadCity.svg">
-        <img id="dixon" src="assets/img/logos/dixon.svg">
         <img id="theOneLives" src="assets/img/logos/theOneLives.svg">
+        <img id="dixon" src="assets/img/logos/dixon.svg">
       </div>
     </section>
-    <!--Ultimas Entradas-->
-    <section class="ultimasEntradas">
-      <h1 id="ultimasEntradasTitulo">Últimas Entradas</h1>
+
+    <!--Últimas Entradas-->
+    <section class="ultimasEntradasFather">
+      <h2>Últimas Entradas</h2>
+      <div id="ultimasEntradasChild">
+      </div>
     </section>
   </main>
   <footer>
 
   </footer>
+  <script src="https://kit.fontawesome.com/96a46fc5bd.js" crossorigin="anonymous"></script>
   <script src="./scripts/tempData.js"></script>
   <script src="./scripts/index.js"></script>
 </body>
