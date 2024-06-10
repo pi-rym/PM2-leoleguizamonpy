@@ -1,19 +1,17 @@
-console.log(tempData);
-
 document.addEventListener("DOMContentLoaded", () => {
-    const cardsUltimasEntradas = document.getElementById("ultimasEntradasChild");
+    const cardsUltimasEntradas = document.getElementById("seriesChild");
 
     function createCard(movie) {
         const card = document.createElement("div");
-        card.classList.add("ultimasEntradasChildCards");
+        card.classList.add("seriesChildCard");
         card.innerHTML = `
-        <div class="ultimasEntradasChildCardsContent01">
-            <img src="${movie.poster}" class="cardsImage">
+        <div class="seriesChildCardimg">
+            <img src="${movie.poster}" alt="">
+            <i class="fa-solid fa-circle-play play-icon"></i>
         </div>
-        <div class="ultimasEntradasChildCardsContent02">
-            <h3 class="cardsTitle">${movie.title}</h3>
-            <h4 class="cardsRate"><span class="material-symbols-rounded">grade</span>${movie.rate}</h4>
-            <p class="cardsYear">${movie.year}</p>
+        <div class="seriesChildCardtxt">
+            <h4>${movie.title}</h4>
+            <h6><i class="fa-solid fa-star"></i> ${movie.rate} | 10</h6>
         </div>
     `;
         return card;

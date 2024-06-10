@@ -1,0 +1,46 @@
+.menuFather {
+    background-color: var(--blackMedium);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+
+.menuChild {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    place-items: center;
+    text-align: center;
+}
+
+nav a {
+    color: var(--blackLight);
+    display: flex;
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--white);
+    transition: 0.3s;
+}
+
+#activate {
+    color: var(--yellow);
+    font-weight: 600;
+}
+
+#logo {
+    width: 32px;
+    cursor: pointer;
+}

@@ -1,0 +1,337 @@
+:root {
+    --white: #ffffff;
+    --yellowLight: #f8c357;
+    --yellow: #FFAB00;
+    --blackLight: #797C8A;
+    --blackMedium: #2E2F34;
+    --blackDark: #1F2023;
+}
+
+/* Body */
+body {
+    background-color: var(--blackDark) !important;
+    padding-top: 3em;
+}
+
+/* Bootstrap */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css");
+
+/* Color */
+.white {
+    color: var(--white);
+}
+
+.yellow {
+    color: var(--yellow);
+}
+
+.blackLight {
+    color: var(--blackLight);
+}
+
+.blackMedium {
+    color: var(--blackMedium);
+}
+
+.blackDark {
+    color: var(--blackDark);
+}
+
+/* Background */
+.backgroundWhite {
+    background-color: var(--white);
+}
+
+.backgroundYellow {
+    background-color: var(--yellow);
+}
+
+.backgroundBlackLight {
+    background-color: var(--blackLight);
+}
+
+.backgroundBlackMedium {
+    background-color: var(--blackMedium);
+}
+
+.backgroundBlackDark {
+    background-color: var(--blackDark);
+}
+
+/* Poppins import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Typhography */
+.link {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.txth1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3.6em;
+}
+
+.txth202 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 1.6em;
+}
+
+.txth2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+.txth3 {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.txth4 {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.txth5 {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.txtp {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 0.8em;
+}
+
+.txtp02 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1em;
+}
+
+/* Container Portada */
+.containerPortada {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), #1F2023), url("https://lh3.googleusercontent.com/d/1yCmgzj349vCfTy9li7-ZUGF_n9QSOdAn=s1800");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 4em;
+}
+
+.containerPortada p {
+    width: 50%;
+}
+
+.containerPortada i {
+    margin-right: 0.5em;
+}
+
+.containerSeries {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.containerPortadaButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Button Information */
+.buttonInformation {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--yellow);
+    color: var(--blackDark);
+    text-transform: uppercase;
+    border: none;
+    padding: 0.6em;
+    border-radius: 0.2em;
+    width: 16em;
+    font-weight: 600;
+    margin-right: 1em;
+    transition: 0.3s;
+}
+
+.buttonInformation i {
+    margin-right: 1em;
+}
+
+.buttonInformation:hover {
+    background-color: var(--yellowLight);
+    color: var(--blackDark);
+}
+
+/* Select */
+.selectTemporadas {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--blackMedium);
+    color: var(--blackLight);
+    border: none;
+    text-transform: uppercase;
+    padding: 0.6em;
+    border-radius: 0.2em;
+    font-weight: 600;
+    width: 16em;
+}
+
+.selectTemporadas option {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--blackMedium);
+    color: var(--blackLight);
+    border: none;
+    text-transform: uppercase;
+    padding: 0.6em;
+    border-radius: 0;
+    font-weight: 400;
+    width: 16em;
+}
+
+/* Card Series */
+.cardLeft {
+    display: flex;
+    width: 38.75em;
+    height: 17.625em;
+    margin-bottom: 2em;
+    justify-content: flex-start;
+}
+
+.cardLeftImg {
+    width: 65%;
+    display: flex;
+    background-color: var(--black);
+    overflow: hidden;
+    position: relative;
+}
+
+.cardLeftImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.cardLeft:hover img {
+    transform: scale(1.1);
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+.cardLeft:hover .play-icon {
+    opacity: 1;
+}
+
+.cardLeftTxt {
+    font-family: "Poppins", sans-serif;
+    width: 35%;
+    padding: 2em;
+    background-color: var(--blackMedium);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transition: 0.2s;
+}
+
+.cardLeftTxt h3 {
+    margin: 0;
+}
+
+.cardLeftTxt h2 {
+    margin: 0;
+}
+
+.cardLeftTxt i {
+    margin-right: 0.5em;
+}
+
+.cardLeftTxt p {
+    margin: 0;
+    margin-top: 1em;
+}
+
+/* Boostrap Modal */
+.containerReparto {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.cardReparto {
+    width: 180px;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto 0;
+    margin-bottom: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardReparto img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-size: cover;
+    object-fit: cover;
+    margin-bottom: 0.5em;
+}
+
+.cardReparto p {
+    margin: 0;
+}
+
+.modal-content {
+    background-color: var(--blackDark);
+}
+
+.modal-header {
+    background-color: var(--yellow);
+    border-radius: none;
+    border: none;
+}
+
+.modal-body {
+    background-color: var(--blackDark);
+    border: none;
+}
+
+.modal-footer {
+    background-color: var(--blackDark);
+}
+
+.btn-close {
+    color: var(--white) !important;
+}
