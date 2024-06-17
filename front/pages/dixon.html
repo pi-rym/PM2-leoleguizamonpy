@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/import.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <!-- Menú -->
+        <section class="menuFather">
+            <div class="menuChild container">
+                <div class="menuChildLogo">
+                    <img src="../assets/img/brandYellow.svg">
+                </div>
+                <div class="menuChildLista">
+                    <nav>
+                        <a id="activo" href="../index.html">Home</a>
+                        <a href="pages/twd.html">TWD</a>
+                        <a href="pages/acerca_de.html">Acerca de</a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- Portada -->
+        <section class="portadaFather">
+            <div class="container">
+                <div class="row align-items-end" style="height: 80vh;">
+                    <div class="col-md-6 col-12">
+                        <div class="portadaChildtxt">
+                            <h1><span id="h1Color">TWD</span> Daryl Dixon</h1>
+                            <p>El spin-off de The Walking Dead sigue a Daryl Dixon tras sobrevivir al apocalipsis zombi,
+                                desembarcando en Francia sin saber cómo ni por qué. Emprende un viaje a través de una
+                                Francia devastada con la esperanza de regresar a casa, pero las conexiones que establece
+                                en el camino complican su misión.</p>
+                        </div>
+                        <div class="portadaChildbtn">
+                            <button><i class="fa-regular fa-bookmark"></i>Agregar a la Lista</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 portadaChildimg d-none d-md-block">
+                        <img src="https://lh3.googleusercontent.com/d/1DT04cWngK45F5v8H6oxshT6xwV78HD8w=s600" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Select Series -->
+        <section class="selectSeriesFather">
+            <div id="selectSeriesChild" class="selectSeriesChild container">
+
+            </div>
+        </section>
+        <section class="cierre container">
+            <!-- Reparto -->
+            <section class="repartoFather col-8">
+                <h2>Reparto</h2>
+                <div id="repartoChild" class="repartoChild">
+                </div>
+            </section>
+            <!-- Te puede Interesar -->
+            <section class="interesarFather col-4">
+                <h2>Te puede Interesar</h2>
+                <div id="interesarChild" class="interesarChild">
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <!-- Footer -->
+        <section class="footerFather">
+            <div class="footerChild container">
+                <div class="footerChildLogo">
+                    <img src="../assets/img/brandBlackLight.svg">
+                    <p>@leoleguizamonpy | Todos los derechos reservados </p>
+                </div>
+                <div class="footerChildLista">
+                    <a href="mailto:leoleguizamonpy@gmail.com" class="link"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/leoleguizamonpy/" class="link"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/leoleguizamonpy/" class="link"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/96a46fc5bd.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybGPSdMrz4GfXy1gKtv9Q/0fWe9P/KNFmeZn5wU8FJr64d+O2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRz6R1bFwl99l9g2vmbLobX2yJg5fiScbOAGG2kL4"
+        crossorigin="anonymous"></script>
+    <script src="../scripts/index.js" crossorigin="anonymous"></script>
+    <script src="../scripts/tempData.js" crossorigin="anonymous"></script>
+    <script src="../scripts/dixon/dixonDate.js" crossorigin="anonymous"></script>
+    <script src="../scripts/dixon/dixonRender.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

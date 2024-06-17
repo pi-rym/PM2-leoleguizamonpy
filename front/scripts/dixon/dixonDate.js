@@ -54,7 +54,7 @@ const dixonCast = [
         character: "Fallou Boukar",
     },
     {
-        image: "https://lh3.googleusercontent.com/d/1mULcGlJ38_sL6SCEgI0qTAwW5DZoM-vm=s400",
+        image: "https://lh3.googleusercontent.com/d/1VGeglGTngsSyVE1CAkrcz3qAAOROiUdC=s400",
         name: "François Delaive",
         character: "Dr. Lafleur",
     },
@@ -104,42 +104,42 @@ const dixonTemp01 = [
     {
         season: "Temporada 01",
         episode: "Episodio 01",
-        rate: 4.7,
+        rate: 8.7,
         description: "Daryl llega a Francia, mientras conoce a un grupo de sobrevivientes que le revelan la gravedad de la situación en Europa.",
         poster: "https://lh3.googleusercontent.com/d/1r_huEwMzSXltHb1QXvtEIjQXT1erN8Ma=s600"
     },
     {
         season: "Temporada 01",
         episode: "Episodio 02",
-        rate: 4.3,
+        rate: 8.3,
         description: "Daryl se encuentra con un grupo de sobrevivientes en Francia, enfrentando desconfianza y nuevas amenazas.",
         poster: "https://lh3.googleusercontent.com/d/1vULSR1sTJwn3BXjcfgUTuajtK8X08Mmu=s600"
     },
     {
         season: "Temporada 01",
         episode: "Episodio 03",
-        rate: 4.5,
+        rate: 8.5,
         description: "Daryl y Laurent enfrentan peligros y forjando alianzas mientras fortalecen su relación en su lucha por sobrevivir.",
         poster: "https://lh3.googleusercontent.com/d/13cV1pXqLR-22h7XOVoYvEcpbUJWeR1vP=s600"
     },
     {
         season: "Temporada 01",
         episode: "Episodio 04",
-        rate: 4.2,
+        rate: 8.2,
         description: "Daryl y Laurent se enfrentan a nuevos peligros en París, mientras descubren más sobre el pasado de Laurent y buscan un refugio seguro.",
         poster: "https://lh3.googleusercontent.com/d/1KKEUbjoXQZBkLtukgUuiyAlb8J7V1alM=s600"
     },
     {
         season: "Temporada 01",
         episode: "Episodio 05",
-        rate: 4.4,
+        rate: 8.4,
         description: "Daryl y Laurent se enfrentan a difíciles decisiones, revelando más sobre sus propios pasados y la realidad del mundo postapocalíptico.",
         poster: "https://lh3.googleusercontent.com/d/1zue0r6PCfu54oHfr8EuuJbdYQim9WbEu=s600"
     },
     {
         season: "Temporada 01",
         episode: "Episodio 06",
-        rate: 4.8,
+        rate: 8.8,
         description: "Daryl y Laurent se enfrentan a difíciles decisiones, revelando más sobre sus propios pasados y la realidad del mundo postapocalíptico.",
         poster: "https://lh3.googleusercontent.com/d/1x6HZ0-ag-978jTgXsBlyy9-T3D-peU-Y=s600"
     },

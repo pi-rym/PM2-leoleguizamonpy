@@ -1,53 +1,80 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const cardsSeriesDixon = document.getElementById("containerSeriesDixon");
-    const cardsCastDixon = document.getElementById("containerCastDixon");
+    const cardsSeriesDixon = document.getElementById("selectSeriesChild");
+    const cardsCastDixon = document.getElementById("repartoChild");
+    const cardsInteresar = document.getElementById("interesarChild");
 
-    function createCard(serie) {
+    function createSerieCard(serie) {
         const card = document.createElement("div");
-        card.classList.add("cardLeft");
+        card.classList.add("selectSeriesChildCard");
         card.innerHTML = `
-            <div class="cardLeftImg">
+            <div class="selectSeriesChildCardimg">
                 <img src="${serie.poster}" alt="Poster de ${serie.season} ${serie.episode}">
                 <i class="fa-solid fa-circle-play play-icon"></i>
             </div>
-            <div class="cardLeftTxt">
-                <h3 class="txth3 white">${serie.season}</h3>
-                <h2 class="txth2 yellow">${serie.episode}</h2>
-                <h4 class="txth3 blackLight"><i class="fa-solid fa-star"></i>${serie.rate}</h4>
-                <p class="txtp blackLight">${serie.description}</p>
+            <div class="selectSeriesChildCardtxt">
+                <h5>${serie.season}</h5>
+                <h2>${serie.episode}</h2>
+                <h6><i class="fa-solid fa-star"></i>${serie.rate} | 10</h6>
+                <p>${serie.description}</p>
             </div>
         `;
         return card;
     }
 
-    function renderCards(series) {
+    function renderSerieCards(series) {
         series.forEach((serie) => {
-            const card = createCard(serie);
+            const card = createSerieCard(serie);
             cardsSeriesDixon.appendChild(card);
         });
     }
 
-    renderCards(dixonTemp01);
+    renderSerieCards(dixonTemp01);
 
-    function createCast(castMember) {
+    function createCastCard(castMember) {
         const cast = document.createElement("div");
-        cast.classList.add("cardReparto");
+        cast.classList.add("repartoChildCard");
         cast.innerHTML = `
-            <div class="cardReparto">
-                <img src="${castMember.image}" alt="">
-                <p class="txtp white">${castMember.name}</p>
-                <p class="txtp blackLight">${castMember.character}</p>
-            </div>
+        <div class="repartoChildCardimg">
+            <img src="${castMember.image}">
+        </div>
+        <div class="repartoChildCardtxt">
+            <h5>${castMember.name}</h5>
+            <h6>${castMember.character}</h6>
+        </div>
         `;
         return cast;
     }
 
-    function renderCasts(casts) {
+    function renderCastCards(casts) {
         casts.forEach((castMember) => {
-            const cast = createCast(castMember);
+            const cast = createCastCard(castMember);
             cardsCastDixon.appendChild(cast);
         });
     }
 
-    renderCasts(dixonCast);
+    renderCastCards(dixonCast);
+
+    function createMovieCard(movie) {
+        const card = document.createElement("div");
+        card.classList.add("interesarChildCard");
+        card.innerHTML = `
+        <div class="interesarChildimg">
+            <img src="${movie.poster}" alt="">
+        </div>
+        <div class="interesarChildtxt">
+            <h4>${movie.title}</h4>
+            <h6><i class="fa-solid fa-star"></i> ${movie.rate} | 10</h6>
+        </div>
+    `;
+        return card;
+    }
+
+    function renderMovieCards(movies) {
+        movies.forEach((movie) => {
+            const card = createMovieCard(movie);
+            cardsInteresar.appendChild(card);
+        });
+    }
+
+    renderMovieCards(tempData);
 });

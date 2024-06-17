@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         card.innerHTML = `
         <div class="seriesChildCardimg">
             <img src="${movie.poster}" alt="">
-            <i class="fa-solid fa-circle-play play-icon"></i>
+            <i class="fa-solid"></i>
         </div>
         <div class="seriesChildCardtxt">
             <h4>${movie.title}</h4>
