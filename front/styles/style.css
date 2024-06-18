@@ -134,6 +134,7 @@ body {
 .seriesChildCard {
     position: relative;
     background-color: var(--blackMedium);
+    width: 100%;
     width: 25em;
     overflow: hidden;
     border-radius: none;
@@ -210,7 +211,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content:space-around;
 }
 
 .repartoChildCard {
@@ -313,8 +314,9 @@ body {
     background-color: var(--blackMedium);
     display: flex;
     flex-direction: row;
-    width: 38.75em;
-    height: 17.625em;
+    width: 100%;
+    max-width: 38.75em;
+    height: auto;
     margin-bottom: 2em;
     cursor: pointer;
     transition: 0.3s;
@@ -332,6 +334,7 @@ body {
 }
 
 .selectSeriesChildCardimg {
+    width: 100%;
     width: 65%;
     display: flex;
     background-color: var(--black);
@@ -353,6 +356,7 @@ body {
 .selectSeriesChildCardtxt {
     display: flex;
     flex-direction: column;
+    width: 100%;
     width: 40%;
     padding: 1em;
     margin: auto 0;
@@ -438,8 +442,9 @@ body {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .portadaChildimg {
-        display: none;
+    .portadaFather {
+        height: auto;
+        align-items: center;
     }
 
     .portadaChildtxt h1 {
@@ -457,5 +462,50 @@ body {
 
     .portadaChildbtn button {
         margin: 0.5em 0;
+    }
+
+    .seriesChildCard {
+        width: 100%;
+    }
+
+    .seriesChildCardimg img {
+        width: 100%;
+    }
+
+    .repartoChild {
+        justify-content: space-between;
+    }
+
+    .repartoChildCard {
+        width: 10em;
+    }
+
+    .selectSeriesChildCard {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .selectSeriesChildCardimg {
+        width: 100%;
+        height: auto;
+    }
+
+    .selectSeriesChildCardtxt {
+        width: 100%;
+        text-align: left;
+    }
+
+    .footerChild {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerChildLogo p {
+        margin-left: 1em;
+    }
+
+    .footerChildLista {
+        margin-top: 1em;
     }
 }
