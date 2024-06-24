@@ -76,5 +76,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    renderMovieCards(tempData);
+    $.get('https://students-api.up.railway.app/movies', function(data) {
+        renderMovieCards(data);
+    }).fail(function() {
+        console.error('Error al obtener los datos');
+    });
 });

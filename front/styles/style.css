@@ -176,15 +176,23 @@ body {
     height: 20%;
 }
 
+.seriesChildCardtxt i {
+    color: var(--yellow);
+}
+
+.seriesChildCard:hover i {
+    color: var(--blackDark);
+}
+
 .seriesChildCardtxt h6 {
     color: var(--yellowLight);
 }
 
-.seriesChildCard:hover h4 {
+.seriesChildCard:hover h6 {
     color: var(--blackDark);
 }
 
-.seriesChildCard:hover h6 {
+.seriesChildCard:hover h4 {
     color: var(--blackDark);
 }
 
@@ -194,6 +202,11 @@ body {
 
 .seriesChildCardtxt i {
     margin-right: 0.5em;
+}
+
+.seriesChildCardtxtRate {
+    display: flex;
+    flex-direction: row;
 }
 
 /* Reparto */
@@ -253,12 +266,14 @@ body {
 }
 
 .interesarChild {
+    background-color: var(--blackMedium);
+    padding: 2em;
     display: flex;
     flex-direction: column;
 }
 
 .interesarChildCard {
-    background-color: var(--blackMedium);
+    background-color: var(--blackDark);
     display: flex;
     flex-direction: row;
     align-items: center;
