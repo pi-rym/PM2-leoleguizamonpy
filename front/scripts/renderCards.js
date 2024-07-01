@@ -21,7 +21,7 @@ const renderCards = (data) => {
         title.innerHTML = movie.title;
 
         const rateContainer = document.createElement("div");
-        rateContainer.classList.add("seriesChildCardtxtRate")
+        rateContainer.classList.add("seriesChildCardtxtRate");
 
         const iconoFaStar = document.createElement("i");
         iconoFaStar.classList.add("fa-solid", "fa-star");
