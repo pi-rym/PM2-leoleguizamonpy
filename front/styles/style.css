@@ -224,7 +224,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
 .repartoChildCard {
@@ -454,6 +454,69 @@ body {
     color: var(--blackLight);
     margin-left: 1em;
 }
+
+.formContainer {
+    display: flex;
+    width: 480px;
+    margin: 0 auto;
+    margin-top: 3em;
+}
+
+.formularioPost {
+    background-color: var(--blackDark);
+}
+
+.formularioPost label {
+    color: var(--white);
+    text-transform: uppercase;
+    margin-bottom: 0.3em;
+    font-size: 1em;
+}
+
+.formularioPost input {
+    background-color: var(--blackMedium);
+    color: var(--blackLight);
+    border: none;
+    padding: 0.3em;
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 0.8em;
+}
+
+.formularioPost input:focus {
+    outline: none;
+}
+
+.formTable {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 3em;
+}
+
+.formTableContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2em;
+}
+
+.formbtn input {
+    background-color: var(--yellow);
+    color: var(--blackDark);
+    width: auto;
+    border: none;
+    border-radius: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1em 2em;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    transition: 0.5s;
+}
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {

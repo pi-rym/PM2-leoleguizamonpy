@@ -8,6 +8,16 @@ async function getMoviesService() {
     }
 }
 
+async function createdMovieService(movieObject){
+    try {
+        return await Movie.create(movieObject)
+
+    } catch (error) {
+        throw error
+    }
+}
+
 module.exports = {
-    getMoviesService
+    getMoviesService,
+    createdMovieService
 }
