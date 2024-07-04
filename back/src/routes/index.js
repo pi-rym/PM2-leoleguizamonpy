@@ -6,6 +6,12 @@ const router = Router()
 
 router.get("/", obtenerData)
 
+router.use("/movies", moviesRouter)
+
+module.exports = {
+    router
+}
+
 router.get("/params/:id", (req, res) => {
     res.status(200).json({
         message: "aquí están los params",
@@ -26,9 +32,3 @@ router.get("/body", (req, res) => {
         data: req.body
     })
 })
-
-router.use("/movies", moviesRouter)
-
-module.exports = {
-    router
-}

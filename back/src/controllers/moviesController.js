@@ -7,15 +7,22 @@ function obtenerData(req, res) {
     })
 }
 
-function getMoviesController(request, res) {
-    const moviesData = getMoviesService()
-    res.status(200).json({
-        message: "aquí está la información de las movies",
-        data: moviesData
-    })
+async function getMoviesController(request, res) {
+    try {
+        const moviesData = await getMoviesService()
+        res.status(200).json({
+            message: "aquí está la información de las movies",
+            data: moviesData
+        })
+    } catch (error) {
+        res.status(400).json({
+            message: "Hubo un error en la aplicación",
+            data: error
+        })
+    }
 }
 
-function createMovie(req, res){
+function createMovie(req, res) {
     res.send("Todo ok en create movie")
 }
 
