@@ -1,18 +1,26 @@
-function obtenerData(req, res){
+const { getMoviesService } = require("../services/moviesServices")
+
+function obtenerData(req, res) {
     res.status(200).json({
         message: "todo ok en /",
         data: []
     })
 }
 
-function getMoviesData(req, res) {
+function getMoviesController(request, res) {
+    const moviesData = getMoviesService()
     res.status(200).json({
         message: "aquí está la información de las movies",
-        data: []
+        data: moviesData
     })
+}
+
+function createMovie(req, res){
+    res.send("Todo ok en create movie")
 }
 
 module.exports = {
     obtenerData,
-    getMoviesData
+    getMoviesController,
+    createMovie
 }
